@@ -6,13 +6,23 @@
 
 ### 2. Wykonaj następujący skrypt:  
 -- odczytaj plik linijka po linijce  
--- kazda linijke wczytujesz jako rekord o nazwie linijka  ```
+-- kazda linijke wczytujesz jako rekord o nazwie linijka  
+```
 plik = load '/user/cloudera/plik_avg1.txt' as (linijka);
+
 ```
 
--- podziel kazda linijke na tokeny - kazdy znich teraz jest rekordem o nazwie wyraz  wyrazy = foreach plik generate flatten(TOKENIZE(linijka)) as wyraz;  
+-- podziel kazda linijke na tokeny - kazdy znich teraz jest rekordem o nazwie 
+```
+wyraz  wyrazy = foreach plik generate flatten(TOKENIZE(linijka)) as wyraz; 
+```
+
 -- pogrupuj razem wyrazy po poszczegolnym wyrazie  grupa = group wyrazy by wyraz;  
--- policz wyrazy  policz = foreach grupa generate group, COUNT(wyrazy);  
+-- policz wyrazy  
+```
+policz = foreach grupa generate group, COUNT(wyrazy);  
+```
+
 -- wykonaj zadanie na platformie Hadoop i wypisz rezultaty  dump policz;  
 
 ### 3. Zmień plik na jeden z większych oraz przeprowadź zapis do pliku zastępując polecenie DUMP … poleceniem STORE policz INTO '/user/cloudera/wynik_pig_licznik';     
