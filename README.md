@@ -31,7 +31,7 @@ STORE policz INTO '/user/cloudera/wynik_pig_licznik';
 
 # Zadanie 2
 
-Możesz korzystać z pomocy na stronie: https://pig.apache.org/docs/r0.15.0/index.html 
+Możesz korzystać z pomocy na stronie: [Strona Apache](https://pig.apache.org/docs/r0.15.0/index.html)
 
 ### 1. Skopiuj do HDFS plik o nazwie movies_data.csv.
 
