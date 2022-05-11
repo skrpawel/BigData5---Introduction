@@ -1,4 +1,4 @@
-# BigData5---Introduction
+# BigData5 - Introduction
 
 # Zadanie 1  
 
@@ -6,7 +6,10 @@
 
 ### 2. Wykonaj następujący skrypt:  
 -- odczytaj plik linijka po linijce  
--- kazda linijke wczytujesz jako rekord o nazwie linijka  plik = load '/user/cloudera/plik_avg1.txt' as (linijka);  
+-- kazda linijke wczytujesz jako rekord o nazwie linijka  ```
+plik = load '/user/cloudera/plik_avg1.txt' as (linijka);
+```
+
 -- podziel kazda linijke na tokeny - kazdy znich teraz jest rekordem o nazwie wyraz  wyrazy = foreach plik generate flatten(TOKENIZE(linijka)) as wyraz;  
 -- pogrupuj razem wyrazy po poszczegolnym wyrazie  grupa = group wyrazy by wyraz;  
 -- policz wyrazy  policz = foreach grupa generate group, COUNT(wyrazy);  
