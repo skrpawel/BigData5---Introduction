@@ -2,7 +2,7 @@
 
 # Zadanie 1  
 
-1. Przygotuj mały plik tekstowy do policzenia słów.  
+## 1. Przygotuj mały plik tekstowy do policzenia słów.  
 
 2. Wykonaj następujący skrypt:  
 -- odczytaj plik linijka po linijce  
