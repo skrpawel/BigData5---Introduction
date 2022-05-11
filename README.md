@@ -118,6 +118,6 @@ Na podstawie składni języka Pig Latin sprawdź, czy wiesz:
 2. Czy za pomocą operatora SPLIT można podzielić zbiór na więcej niż dwa podzbiory?
 
 3. Jak powinien być zbudowany plik wejściowy, żeby przynajmniej jeden z jego elementów można było wczytać jako:
-4. a) krotka/tuple składającą się z elementów atomowych? 
-5. zbiór/bag składający się z krotek?
+ a) krotka/tuple składającą się z elementów atomowych? 
+ b) zbiór/bag składający się z krotek?
 
