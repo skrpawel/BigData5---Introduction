@@ -31,7 +31,7 @@ STORE policz INTO '/user/cloudera/wynik_pig_licznik';
 
 # Zadanie 2
 
-Możesz korzystać z pomocy na stronie: [Strona Apache](https://pig.apache.org/docs/r0.15.0/index.html)
+Możesz korzystać z pomocy na stronie: [Apache](https://pig.apache.org/docs/r0.15.0/index.html)
 
 ### 1. Skopiuj do HDFS plik o nazwie movies_data.csv.
 
@@ -55,16 +55,20 @@ Użyj funkcji FILTER … BY …
 Operator porównania to ==.
 ### 5. Przeprowadź ponowne filtrowanie wybierając filmy z lat 1949 – 1961.
 
-Podpowiedź: FILTER … BY … AND …
-
+Podpowiedź: 
+```
+FILTER … BY … AND …  
+```
 ### 6. Zapisz do pliku rezultatów tylko kolumny z tytułem i czasem trwania w minutach (w pliku wejściowym czas jest podany w sekundach).
 
 Podpowiedź: FOREACH … GENERATE …
 
 7. Uporządkuj filmy malejąco po roku.
 
-Podpowiedź: ORDER … BY …
-
+Podpowiedź: 
+```
+ORDER … BY …
+```
 
 # Zadanie 3
 
@@ -103,6 +107,7 @@ Przetestuj na wybranym zbiorze numerycznym funkcje agregujące:
 5. SUM,
 6. AVG.
 ```
+
 
 # Zadanie 7
 
