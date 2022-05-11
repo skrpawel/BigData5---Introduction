@@ -11,9 +11,9 @@
 plik = load '/user/cloudera/plik_avg1.txt' as (linijka);
 ```
 
--- podziel kazda linijke na tokeny - kazdy znich teraz jest rekordem o nazwie 
+-- podziel kazda linijke na tokeny - kazdy znich teraz jest rekordem o nazwie wyraz
 ```
-wyraz  wyrazy = foreach plik generate flatten(TOKENIZE(linijka)) as wyraz; 
+wyrazy = foreach plik generate flatten(TOKENIZE(linijka)) as wyraz; 
 ```
 
 -- pogrupuj razem wyrazy po poszczegolnym wyrazie  grupa = group wyrazy by wyraz;  
