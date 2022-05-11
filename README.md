@@ -2,9 +2,9 @@
 
 # Zadanie 1  
 
-## 1. Przygotuj mały plik tekstowy do policzenia słów.  
+### 1. Przygotuj mały plik tekstowy do policzenia słów.  
 
-2. Wykonaj następujący skrypt:  
+### 2. Wykonaj następujący skrypt:  
 -- odczytaj plik linijka po linijce  
 -- kazda linijke wczytujesz jako rekord o nazwie linijka  plik = load '/user/cloudera/plik_avg1.txt' as (linijka);  
 -- podziel kazda linijke na tokeny - kazdy znich teraz jest rekordem o nazwie wyraz  wyrazy = foreach plik generate flatten(TOKENIZE(linijka)) as wyraz;  
@@ -12,17 +12,17 @@
 -- policz wyrazy  policz = foreach grupa generate group, COUNT(wyrazy);  
 -- wykonaj zadanie na platformie Hadoop i wypisz rezultaty  dump policz;  
 
-3. Zmień plik na jeden z większych oraz przeprowadź zapis do pliku zastępując polecenie DUMP … poleceniem STORE policz INTO '/user/cloudera/wynik_pig_licznik';     
+### 3. Zmień plik na jeden z większych oraz przeprowadź zapis do pliku zastępując polecenie DUMP … poleceniem STORE policz INTO '/user/cloudera/wynik_pig_licznik';     
 
 # Zadanie 2
 
 Możesz korzystać z pomocy na stronie: https://pig.apache.org/docs/r0.15.0/index.html 
 
-1. Skopiuj do HDFS plik o nazwie movies_data.csv.
+### 1. Skopiuj do HDFS plik o nazwie movies_data.csv.
 
-2. Wczytaj plik i wypisz na standardowe urządzenia wyjścia.
+### 2. Wczytaj plik i wypisz na standardowe urządzenia wyjścia.
 
-3. Zmodyfikuj wczytywanie pliku dodając klauzulę:
+### 3. Zmodyfikuj wczytywanie pliku dodając klauzulę:
 
 USING PigStorage(',') as (identyfikator,tytul,rok,ocena,czas_trwania)
 
@@ -30,18 +30,18 @@ Dzięki niej będziesz mógł odwoływać się do odpowiednich kolumn w pliku.
 
 Uwaga: Funkcja PigStorage przetwarza pliki tekstowe – chcąc operować później na kolumnach numerycznych, będziesz musiał przeprowadzić rzutowanie.
 
-4. Wybierz filmy tylko z roku 1949 i zapisz do pliku.
+### 4. Wybierz filmy tylko z roku 1949 i zapisz do pliku.
 
 Podpowiedzi:
 
 Przeprowadź rzutowanie roku na typ float.
 Użyj funkcji FILTER … BY …
 Operator porównania to ==.
-5. Przeprowadź ponowne filtrowanie wybierając filmy z lat 1949 – 1961.
+### 5. Przeprowadź ponowne filtrowanie wybierając filmy z lat 1949 – 1961.
 
 Podpowiedź: FILTER … BY … AND …
 
-6. Zapisz do pliku rezultatów tylko kolumny z tytułem i czasem trwania w minutach (w pliku wejściowym czas jest podany w sekundach).
+### 6. Zapisz do pliku rezultatów tylko kolumny z tytułem i czasem trwania w minutach (w pliku wejściowym czas jest podany w sekundach).
 
 Podpowiedź: FOREACH … GENERATE …
 
