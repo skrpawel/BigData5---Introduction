@@ -14,7 +14,7 @@
 
 3. Zmień plik na jeden z większych oraz przeprowadź zapis do pliku zastępując polecenie DUMP … poleceniem STORE policz INTO '/user/cloudera/wynik_pig_licznik';     
 
-#Zadanie 2
+# Zadanie 2
 
 Możesz korzystać z pomocy na stronie: https://pig.apache.org/docs/r0.15.0/index.html 
 
@@ -50,20 +50,20 @@ Podpowiedź: FOREACH … GENERATE …
 Podpowiedź: ORDER … BY …
 
 
-#Zadanie 3
+# Zadanie 3
 
 Korzystając z jednego z wcześniej wykonanych zadań oraz interpretera GRUNT, sprawdź działanie poleceń Pig:
 1. DESCRIBE,
 2. EXPLAIN,
 3. LIMIT … DUMP.
 
-#Zadanie 4
+# Zadanie 4
 
 Przetestuj na wybranych zbiorach operatory złączenia:
 1. JOIN,
 2. UNION.
 
-#Zadanie 5
+# Zadanie 5
 
 Przetestuj na wybranych zbiorach operatory grupowania:
 1. GROUP,
@@ -79,7 +79,7 @@ Przetestuj na wybranym zbiorze numerycznym funkcje agregujące:
 5. SUM,
 6. AVG.
 
-#Zadanie 7
+# Zadanie 7
 
 Na podstawie składni języka Pig Latin sprawdź, czy wiesz:
 
